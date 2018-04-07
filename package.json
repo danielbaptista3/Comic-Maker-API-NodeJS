@@ -1,0 +1,27 @@
+{
+  "name": "comicapi",
+  "version": "1.0.0",
+  "description": "Cette API sera utilisée par l'application ComicMaker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbaptista3/ComicMaker.git"
+  },
+  "keywords": [
+    "nodejs",
+    "comicmaker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielbaptista3/ComicMaker/issues"
+  },
+  "homepage": "https://github.com/danielbaptista3/ComicMaker#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
