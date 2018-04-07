@@ -1,9 +1,17 @@
 const express = require('express');
 const app = express();
 const RouterManager = require('./routes');
+const ModelIndex = require('./models');
 
-app.listen(8080, () => {
-    console.log('Server started at 8080');
-});
+ModelIndex
+    .openDatabase()
+    .then(() => {
+        app.listen(8080, () => {
+            console.log('Server started at 8080');
+        });
 
-RouterManager.use(app);
+        RouterManager.use(app);
+    })
+    .catch((err) => {
+        console.error(err);
+    });
