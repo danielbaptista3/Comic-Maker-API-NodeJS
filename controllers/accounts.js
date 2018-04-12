@@ -2,21 +2,30 @@ const Account = require('../models').Account;
 
 const AccountController = {}
 
-AccountController.findAll = function() {
+AccountController.findAll = () => {
     return Account.findAll();
 };
 
-AccountController.findByMail = function(mail) {
+AccountController.findByMail = (mail) => {
     return Account.findOne({
-        mail: mail
+        where: {
+            mail: mail
+        }
     });
 };
 
-AccountController.create = function(mail, pass) {
+AccountController.create = (mail, pass) => {
     return Account.create({
         mail: mail,
         pass: pass
     });
+};
+
+AccountController.destroy = (mail) => {
+    return AccountController.findByMail(mail)
+        .then((account) => {
+            return account.destroy();
+        });
 };
 
 module.exports = AccountController;
