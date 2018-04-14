@@ -4,6 +4,13 @@ const Account = require('../models').Account;
 const AccountController = require('../controllers/accounts');
 const passport = require('passport');
 
+/*var mail = require('mail').Mail({
+    host: 'smtp.localhost',
+    username: 'comicmaker',
+    password: 'test',
+    port: 25
+});*/
+
 accounts.get('/', (req, res) => {
     AccountController.findAll()
         .then((accounts) => {
@@ -39,11 +46,41 @@ accounts.delete('/:mail', (req, res) => {
     AccountController.destroy(req.params.mail)
         .then((account) => {
             res.status(200).json(account);
-            }).catch((err) => {
-                res.status(500).end();
-            });
-        }
+        }).catch((err) => {
+            res.status(500).end();
+        });
 });
+
+accounts.post('/modifymail/:mail', (req, res) => {
+    AccountController.modifyMail(req.params.mail, req.body.mail)
+        .then((account) => {
+            res.status(200).json(account);
+        }).catch((err) => {
+            res.status(500).end();
+    });
+});
+
+accounts.post('/modifypassword/:mail', (req, res) => {
+    AccountController.modifyMail(req.params.mail, req.body.pass)
+        .then((account) => {
+            res.status(200).json(account);
+        }).catch((err) => {
+        res.status(500).end();
+    });
+});
+
+/*accounts.get('/sendmail/sendmail', (req, res) => {
+    mail.message({
+        from: 'comicmaker@127.0.0.1',
+        to: ['francois@127.0.0.1'],
+        subject: 'Hello from Node.JS'
+    }).body('Node speaks SMTP!')
+        .send(function(err) {
+            res.status(200).send("Send");
+        });
+});*/
+
+
 
 /*accounts.post('/test/:ok', passport.authenticate('local'),
     (err, user, info) => {

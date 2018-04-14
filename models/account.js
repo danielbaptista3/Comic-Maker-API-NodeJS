@@ -1,17 +1,17 @@
 module.exports = function (sequelize, DataTypes) {
-    const Project = sequelize.define('Account', {
+    const Account = sequelize.define('Account', {
         id: {
             type: DataTypes.BIGINT,
             primaryKey: true,
             autoIncrement: true
         },
         mail: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(100),
             allowNull: false,
             unique: true
         },
         pass: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(100),
             allowNull: false
         },
         subscribe: {
@@ -20,9 +20,16 @@ module.exports = function (sequelize, DataTypes) {
             defaultValue: 0
         }
     }, {
-        paranoid: true,
+        paranoid: false,
         freezeTableName: true
     });
-
-    return Project;
+    Account.associate = _associate;
+    return Account;
 };
+
+function _associate(models) {
+    models.Account.belongsTo(models.Subscribe, {
+        as: 'subscribes',
+        foreignKey: 'account'
+    });
+}
