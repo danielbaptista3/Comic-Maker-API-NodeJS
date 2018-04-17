@@ -18,8 +18,8 @@ module.exports = function (sequelize, DataTypes) {
 };
 
 function _associate(models) {
-    models.Subscribe.belongsTo(models.Account, {
+    /*models.Subscribe.belongsTo(models.Account, {
         as: 'subscribes',
         foreignKey: 'account'
-    });
+    });*/
 }

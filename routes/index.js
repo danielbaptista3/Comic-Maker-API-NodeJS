@@ -45,8 +45,8 @@ RouterManager.use = function(app) {
     app.use(passport.session());
 
     app.use('/accounts', require('./accounts'));
-    /*app.use('/updates', require('./updates'));
-    app.use('/comics', require('./comics'));
+    app.use('/updates', require('./updates'));
+    /*app.use('/comics', require('./comics'));
     app.use('/plugins', require('./plugins'));
     app.use('/facturation', require('./facturation'));*/
 };

@@ -28,8 +28,8 @@ module.exports = function (sequelize, DataTypes) {
 };
 
 function _associate(models) {
-    models.Account.belongsTo(models.Subscribe, {
+/*    models.Account.belongsTo(models.Subscribe, {
         as: 'subscribes',
         foreignKey: 'account'
-    });
+    });*/
 }

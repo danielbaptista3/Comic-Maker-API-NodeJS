@@ -1,6 +1,6 @@
 const Account = require('../models').Account;
 
-const AccountController = {}
+const AccountController = {};
 
 AccountController.findAll = () => {
     return Account.findAll();
