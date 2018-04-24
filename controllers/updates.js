@@ -1,4 +1,5 @@
-const Update = require('../models').Update;
+const ModelIndex = require('../models');
+const Update = ModelIndex.Update;
 const UpdateController = {};
 
 UpdateController.getAllUpdates = () => {

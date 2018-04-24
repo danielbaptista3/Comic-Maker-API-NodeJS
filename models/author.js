@@ -13,6 +13,13 @@ module.exports = function (sequelize, DataTypes) {
         paranoid: false,
         freezeTableName: true
     });
-
+    Author.associate = _associate;
     return Author;
 };
+
+function _associate(models) {
+    models.Author.belongsToMany(models.Comic, {
+        as: 'comics',
+        through: 'Authors'
+    });
+}

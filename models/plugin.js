@@ -33,6 +33,13 @@ module.exports = function (sequelize, DataTypes) {
         paranoid: false,
         freezeTableName: true
     });
-
+    Plugin.associate = _associate;
     return Plugin;
 };
+
+function _associate(models) {
+    models.Plugin.belongsTo(models.Account, {
+       as: 'oneaccount',
+       foreignKey: 'account'
+    });
+}

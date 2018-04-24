@@ -28,8 +28,18 @@ module.exports = function (sequelize, DataTypes) {
 };
 
 function _associate(models) {
-/*    models.Account.belongsTo(models.Subscribe, {
-        as: 'subscribes',
+    models.Account.hasOne(models.Subscribe, {
+        as: 'onesubscribe',
         foreignKey: 'account'
-    });*/
+    });
+
+    models.Account.hasMany(models.Comic, {
+        as: 'comics',
+        foreignKey: 'account'
+    });
+
+    models.Account.hasMany(models.Plugin, {
+        as: 'plugins',
+        foreignKey: 'account'
+    });
 }

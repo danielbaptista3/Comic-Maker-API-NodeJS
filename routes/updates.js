@@ -7,7 +7,7 @@ const multer = require('multer');
 var storage = multer.diskStorage({
     destination: './files/updates',
     filename: function (req, file, cb) {
-        cb(null, req.body.version + ".cmp");
+        cb(null, req.body.version + '.cmp');
     }
 })
 
@@ -47,7 +47,6 @@ updates.get('/versions/:version', (req, res) => {
 updates.get('/last', (req, res) => {
     UpdateController.getLast()
         .then((update) => {
-            console.log(update);
             if (update === null) {
                 res.status(404).end();
             } else {

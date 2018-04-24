@@ -1,4 +1,5 @@
-const Account = require('../models').Account;
+const ModelIndex = require('../models');
+const Account = ModelIndex.Account;
 
 const AccountController = {};
 
@@ -13,6 +14,13 @@ AccountController.findByMail = (mail) => {
         }
     });
 };
+
+AccountController.exists = (mail) => {
+    return AccountController.findByMail(mail)
+        .then((account) => {
+            return account !== null;
+        });
+}
 
 AccountController.create = (mail, pass) => {
     return Account.create({

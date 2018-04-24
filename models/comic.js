@@ -25,7 +25,8 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false
         },
         price: {
-            type: DataTypes.DOUBLE
+            type: DataTypes.DOUBLE,
+            defaultValue: 0
         },
         markSum: {
             type: DataTypes.BIGINT,
@@ -49,7 +50,17 @@ module.exports = function (sequelize, DataTypes) {
 
 function _associate(models) {
     models.Comic.belongsTo(models.Serie, {
-        as: 'comics',
+        as: 'oneserie',
         foreignKey: 'serie'
+    });
+
+    models.Comic.belongsTo(models.Account, {
+        as: 'oneaccount',
+        foreignKey: 'account'
+    });
+
+    models.Comic.belongsToMany(models.Author, {
+        as: 'theauthors',
+        through: 'Authors'
     });
 }

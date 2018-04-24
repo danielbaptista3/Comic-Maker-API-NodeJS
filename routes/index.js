@@ -5,8 +5,8 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
 passport.use(new LocalStrategy({
-        usernameField: "mail",
-        passwordField: "pass"
+        usernameField: 'mail',
+        passwordField: 'pass'
     },
     function(mail, pass, done) {
         Account.findOne({ mail: mail }, function (err, account) {
@@ -46,8 +46,8 @@ RouterManager.use = function(app) {
 
     app.use('/accounts', require('./accounts'));
     app.use('/updates', require('./updates'));
-    /*app.use('/comics', require('./comics'));
-    app.use('/plugins', require('./plugins'));
+    app.use('/comics', require('./comics'));
+    /*app.use('/plugins', require('./plugins'));
     app.use('/facturation', require('./facturation'));*/
 };
 

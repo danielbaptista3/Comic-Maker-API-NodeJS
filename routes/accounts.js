@@ -1,6 +1,6 @@
 const express = require('express');
 const accounts = express.Router();
-const Account = require('../models').Account;
+
 const AccountController = require('../controllers/accounts');
 const passport = require('passport');
 
@@ -76,7 +76,7 @@ accounts.post('/modifypassword/:mail', (req, res) => {
         subject: 'Hello from Node.JS'
     }).body('Node speaks SMTP!')
         .send(function(err) {
-            res.status(200).send("Send");
+            res.status(200).send('Send');
         });
 });*/
 
@@ -98,7 +98,7 @@ accounts.post('/modifypassword/:mail', (req, res) => {
             });
 
         });
-        //res.status(200).send("ok");
+        //res.status(200).send('ok');
     }
 );*/
 
