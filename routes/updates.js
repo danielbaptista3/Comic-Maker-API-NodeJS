@@ -7,7 +7,7 @@ const multer = require('multer');
 var storage = multer.diskStorage({
     destination: './files/updates',
     filename: function (req, file, cb) {
-        cb(null, req.body.version + '.cmp');
+        cb(null, req.body.version + '.exe');
     }
 })
 
@@ -37,7 +37,7 @@ updates.get('/versions/:version', (req, res) => {
             if (update === null) {
                 res.status(404).end();
             } else {
-                res.download('./files/updates/' + update.version + '.cmp', update.version + '.cmp');
+                res.download('./files/updates/' + update.version + '.exe', update.version + '.exe');
             }
         }).catch((err) => {
             res.status(500).end();
@@ -50,7 +50,7 @@ updates.get('/last', (req, res) => {
             if (update === null) {
                 res.status(404).end();
             } else {
-                res.download('./files/updates/' + update.version + '.cmp', update.version + '.cmp');
+                res.download('./files/updates/' + update.version + '.exe', update.version + '.exe');
             }
         }).catch((err) => {
             res.status(500).end();

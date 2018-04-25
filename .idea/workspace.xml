@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd79e3a6-1629-47b9-a49b-f20a205c93e5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/authors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/accounts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/updates.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/updates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/updates/1.0.cmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/account.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/author.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/author.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/authors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/comic.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/comic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/serie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/subscribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/accounts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/comics.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/comics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/plugins.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/plugins.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/updates.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/updates.js" afterDir="false" />
@@ -36,35 +23,26 @@
       <file leaf-file-name="plugins.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/plugins.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="435">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugins.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="568">
+              <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugins.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/plugins.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updates.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/updates.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comics.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/comics.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="270">
+              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -110,7 +88,6 @@
         <option value="$PROJECT_DIR$/models/update.js" />
         <option value="$PROJECT_DIR$/routes/test.html" />
         <option value="$PROJECT_DIR$/models/index.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/models/authors.js" />
         <option value="$PROJECT_DIR$/controllers/accounts.js" />
         <option value="$PROJECT_DIR$/controllers/comics.js" />
@@ -124,10 +101,11 @@
         <option value="$PROJECT_DIR$/models/serie.js" />
         <option value="$PROJECT_DIR$/models/subscribe.js" />
         <option value="$PROJECT_DIR$/routes/accounts.js" />
-        <option value="$PROJECT_DIR$/routes/updates.js" />
         <option value="$PROJECT_DIR$/routes/comics.js" />
-        <option value="$PROJECT_DIR$/controllers/plugins.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/plugins.js" />
+        <option value="$PROJECT_DIR$/controllers/plugins.js" />
+        <option value="$PROJECT_DIR$/routes/updates.js" />
       </list>
     </option>
   </component>
@@ -305,7 +283,9 @@
       <workItem from="1524398896471" duration="9894000" />
       <workItem from="1524419305092" duration="1635000" />
       <workItem from="1524468726262" duration="1417000" />
-      <workItem from="1524555855894" duration="257000" />
+      <workItem from="1524555855894" duration="598000" />
+      <workItem from="1524587398139" duration="6039000" />
+      <workItem from="1524641998556" duration="1425000" />
     </task>
     <servers />
   </component>
@@ -342,10 +322,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165730000" />
+    <option name="totallyTimeSpent" value="173535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1600" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.185625" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -610,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
@@ -645,24 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/accounts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/updates.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/comics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -673,31 +633,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/comics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state relative-caret-position="675">
+          <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/plugins.js">
+    <entry file="file://$PROJECT_DIR$/routes/accounts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="1192">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/comics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/updates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        <state relative-caret-position="780">
+          <caret line="52" column="97" selection-start-line="52" selection-start-column="97" selection-end-line="52" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
         </state>
       </provider>
     </entry>

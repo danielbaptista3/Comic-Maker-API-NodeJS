@@ -2,7 +2,21 @@ const ModelIndex = require('../models');
 const Plugin = ModelIndex.Plugin;
 const Op = ModelIndex.Sequelize.Op;
 
+const AccountController = require('../controllers/accounts');
 const PluginController = {};
+
+const multer = require('multer');
+
+var storage = multer.diskStorage({
+    destination: './files/plugins',
+    filename: function (req, file, cb) {
+        cb(null, req.body.name + '.cmp');
+    }
+})
+
+var upload = multer({
+    storage: storage
+});
 
 PluginController.findAll = () => {
     return Plugin.findAll();
@@ -35,6 +49,6 @@ PluginController.create = (name, description, account, version) => {
                 return false;
             }
         });
-}
+};
 
 module.exports = PluginController;
