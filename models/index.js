@@ -12,7 +12,7 @@ ModelIndex.getModel = function (modelName) {
     return this[modelName];
 };
 
-const sequelize = new Sequelize('comicmaker', 'root', 'root', {
+const sequelize = new Sequelize('comicmak_pa', 'comicmak_daniel', 'tenkaichi33', {
     host: 'localhost',
     dialect: 'mysql',
     operatorsAliases: Op
@@ -41,7 +41,7 @@ ModelIndex.openDatabase = function() {
     return sequelize
         .authenticate()
         .then(() => sequelize.sync({
-            force: true
+            force: false
         }));
 };
 

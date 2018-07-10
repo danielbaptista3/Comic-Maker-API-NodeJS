@@ -65,10 +65,10 @@ comics.post('/', upload.single('file'), (req, res) => {
             if (comic === false) {
                 res.status(500).end();
             } else {
-                /*AuthorController.createAll(req.body.authors)
-                    .then((authors) => {*/
-                      //  res.status(201).json(authors);
-                    //});
+                AuthorController.createAll(comic,req.body.authors)
+                    .then((authors) => {
+                        res.status(201).json(authors);
+                    });
                 res.status(201).json(comic);
             }
         })

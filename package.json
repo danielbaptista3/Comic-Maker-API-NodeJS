@@ -4,7 +4,7 @@
   "description": "Cette API sera utilisée par l'application ComicMaker",
   "main": "index.js",
   "scripts": {
-    "start": "node-dev index.js",
+    "start": "node index.js",
     "test": "mocha"
   },
   "repository": {
